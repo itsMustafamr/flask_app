@@ -47,11 +47,9 @@ def math_ops1():
         if ops == 'multiply':
             r = num1*num2
             result = "The multiply of " + str(num1) + 'and ' + str(num2) + "is " + str(r)
-        if ops == 'divide':
-            r = num1/num2
-            result = "The divide of " + str(num1) + 'and ' + str(num2) + "is " + str(r)
-            
         return jsonify(result)
 
 if __name__=="__main__":
     app.run(host="0.0.0.0")
+
+
